@@ -16,13 +16,13 @@ https://github.com/ColorCop/ColorCop/raw/master/codesign/Office%202000%20Tool%20
 4. Search for following files "cert2spc.exe", "makecert.exe", "signtool.exe" in "%PROGRAMFILES(x86)%\Windows Kits\10\bin\10.0.17763.0\x86" for 32-bit and for 64-bit in "%PROGRAMFILES(x86)%\Windows Kits\10\bin\10.0.17763.0\x64".
 Make sure it's the latest version number at end of directory string, your version number might be higher (newer version).
 
-5. Copy all files to same folder with "MakeCert.bat" and "SignPE.bat".
+5. Copy all files "pvkimprt.exe", "cert2spc.exe", "makecert.exe", "signtool.exe" to same folder with "MakeCert.bat" and "SignPE.bat".
 
-6. Run "MakeCert.bat" and type in a password (Private Key for certificate).
+6. Run "MakeCert.bat" and type in a password (Private Key for certificate) eg. YourPasswordOfChoice.
 
-7. Edit "SignPE.bat" so the line "SET PASSWORD=YourPasswordOfChoice" without quotations is the password you entered when running "MakeCert.bat"
+7. Edit "SignPE.bat" so the password, you entered when running "MakeCert.bat" will be the same, edit following "SET PASSWORD=YourPasswordOfChoice" (without quotations)
 
-8. Launch a command prompt and change directory to the directory containing your "signtool.exe", "cert2spc.exe", "makecert.exe", "MakeCert.bat", "SignPE.bat".
+8. Launch a command prompt and change directory to the directory containing your "cert2spc.exe", "makecert.exe", "signtool.exe", "pvkimprt.exe", "MakeCert.bat", "SignPE.bat".
 
 FilenameToDigitallySign.exe = Your File to Digitally Sign, so it will have a digital signature after this procedure is done.
 
